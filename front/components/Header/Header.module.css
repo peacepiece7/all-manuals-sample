@@ -1,0 +1,24 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleInner {
+  display: flex;
+}
+
+.categoies,
+.brands,
+.language {
+  display: inline-block;
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  height: 65px;
+  line-height: 80px;
+}
+.categoies {
+  padding-left: 4.5rem;
+}
+.brands {
+  padding-left: 2.5rem;
+}

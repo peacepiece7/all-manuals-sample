@@ -1,5 +1,5 @@
-import styles from './PopularCategories.module.css';
-import { faker } from '@faker-js/faker';
+import styles from "./PopularCategories.module.css";
+import { faker } from "@faker-js/faker";
 
 // * swiper만들어서 category이동하도록?
 // * width에 맞춰서 회면에 load되는 li개수를 조정?
@@ -12,6 +12,9 @@ export default function PopularCategoies() {
         <div className={styles.title}>
           <span>Popular</span>
           <span>Categories</span>
+        </div>
+        <div classNmae={styles.viewMoreBox}>
+          <span>{"View all >"}</span>
         </div>
       </div>
       <div className={styles.categoryListBox}>

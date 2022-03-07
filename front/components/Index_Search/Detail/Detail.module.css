@@ -1,0 +1,29 @@
+.DetailContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  height: 50px;
+}
+
+.DetailContainer h4 {
+  line-height: 25px;
+  font-size: var(--font-size-middle);
+}
+.DetailContainer p {
+  line-height: 30px;
+  font-size: var(--font-size-middle);
+  font-weight: 400;
+}
+
+.brandBox,
+.productBox,
+.manualBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageBox {
+  padding-right: 30px;
+  height: 50px;
+}

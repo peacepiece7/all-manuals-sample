@@ -2,8 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif, system-ui, "Gill Sans", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -13,4 +15,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+:root {
+  --font-size-small: 1rem;
+  --font-size-middle: 1.333rem;
+  --font-size-title: 2.4rem;
 }

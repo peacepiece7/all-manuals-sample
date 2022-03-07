@@ -1,0 +1,7 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  width: calc((1400 * 100%) / 1924); /* 72.76..% */
+  background-color: rgba(0, 0, 0, 0.1);
+  align-items: center;
+}

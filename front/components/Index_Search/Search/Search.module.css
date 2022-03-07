@@ -1,0 +1,78 @@
+.searchContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question {
+  margin-top: 5.5rem;
+}
+.question h2 {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-title);
+  font-weight: 700;
+}
+
+.searchInner {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.searchInner form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchInner form select,
+.searchInner form input {
+  border: none;
+  outline: none;
+}
+
+.searchInner form select {
+  position: absolute;
+  height: 30px;
+  left: 4.5%;
+  margin-top: 25px;
+  font: var(--font-size-middle);
+  font-weight: 700;
+  /* select 토글 연한 거 수정할라면 이거 켜야 함 */
+  /* -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+}
+.searchInner form select:--ms-expand {
+  /* color: none; */
+}
+
+.searchInner form > input {
+  width: 940px;
+  height: 75px;
+  border-radius: calc(75px / 2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-left: 16%;
+  padding-top: 7px;
+  font: var(--font-size-middle);
+  font-weight: 700;
+}
+.searchInner form > input::placeholder,
+.searchInner form > input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.searchInner form .submit {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 15px;
+  right: 4%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 30px;
+  text-align: center;
+}
