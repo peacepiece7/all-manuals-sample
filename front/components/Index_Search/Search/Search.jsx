@@ -1,6 +1,14 @@
 import styles from "./Search.module.css";
+import Image from "next/image";
+import searchGlass from "../../../public/search_2.png";
+import { useCallback, useRef } from "react";
 
 export default function Search() {
+  const imageInput = useRef();
+
+  const onClickSubmitImage = useCallback(() => {
+    imageInput.current.click();
+  }, [imageInput.current]);
   return (
     <div className={styles.searchContainer}>
       <div className={styles.question}>
@@ -15,7 +23,8 @@ export default function Search() {
           </select>
           <input type="text" placeholder="Search for manuals"></input>
           <div className={styles.submit}>
-            <input type="submit" value="돋"></input>
+            <Image src={searchGlass} onClick={onClickSubmitImage}></Image>
+            <input type="submit" hidden ref={imageInput} name="submit" />
           </div>
         </form>
       </div>

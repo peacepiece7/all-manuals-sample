@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,10 +8,14 @@ export default function Footer() {
         <div className={styles.firstLineInner}>
           <div>
             <span className={styles.contactUs}>
-              <a>contact Us</a>
+              <Link href="/contactUs">
+                <a>contact Us</a>
+              </Link>
             </span>
             <span className={styles.privacyPolicy}>
-              <a>Privacy Policy</a>
+              <Link href="/privacyPolicy">
+                <a>Privacy Policy</a>
+              </Link>
             </span>
           </div>
           <div>

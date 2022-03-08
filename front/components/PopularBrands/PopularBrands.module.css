@@ -26,18 +26,25 @@
 .brandListBox {
   width: 78.5%;
   background-color: white;
-  padding: 42px 47px;
+  padding: 42px 40px;
 }
 
-.brandListInner {
-  width: 95%;
+.brandList {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .brandListBox ul li {
-  width: 205px;
+  width: 20%;
   font-size: var(--font-size-small);
   font-weight: 700;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+  .popularBrandsContainer {
+    flex-direction: column;
+  }
 }

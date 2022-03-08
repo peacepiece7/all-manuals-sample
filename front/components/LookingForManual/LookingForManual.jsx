@@ -1,4 +1,5 @@
 import styles from "./LookingForManual.module.css";
+import Link from "next/link";
 
 export default function LookingForManual() {
   return (
@@ -12,7 +13,9 @@ export default function LookingForManual() {
           <div>Also, you can send us any suggestions about our site!</div>
         </div>
         <div className={styles.contactBtn}>
-          <button>contact us</button>
+          <Link href="/contactUs">
+            <button>contact us</button>
+          </Link>
         </div>
       </div>
       <div className={styles.imageBox}>

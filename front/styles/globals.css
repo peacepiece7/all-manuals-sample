@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif, system-ui, "Gill Sans", sans-serif;
+  font-family: NotoSans, "Poppins", sans-serif, system-ui, "Gill Sans", sans-serif;
   font-size: 14px;
   width: 100%;
   height: 100%;

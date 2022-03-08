@@ -13,12 +13,12 @@ import Footer from "../components/Footer/Footer";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>All Manuals</title>
-        <meta name="description" content="Support all manual sheets" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <header>
+        <Head>
+          <title>All Manuals</title>
+          <meta name="description" content="Support all manual sheets" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Header></Header>
       </header>
       <main className={styles.main}>

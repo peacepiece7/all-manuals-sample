@@ -69,7 +69,6 @@
   position: absolute;
   height: 30px;
   width: 30px;
-  background-color: black;
   border-radius: 15px;
   right: 4%;
   top: 0;
@@ -77,4 +76,5 @@
   margin: auto;
   line-height: 30px;
   text-align: center;
+  cursor: pointer;
 }
