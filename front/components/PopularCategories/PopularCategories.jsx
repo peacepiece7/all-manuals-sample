@@ -10,72 +10,71 @@ export default function PopularCategoies() {
     <div className={styles.popularCategoiesContainer}>
       <div className={styles.titleBox}>
         <div className={styles.title}>
-          <span>Popular</span>
-          <span>Categories</span>
+          <span>Category</span>
         </div>
-        <div classNmae={styles.viewMoreBox}>
-          <span>{"View all >"}</span>
-        </div>
+        {/* <div classNmae={styles.moreLink}>{"View all >"}</div> */}
       </div>
       <div className={styles.categoryListBox}>
-        <ul>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.food(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.technics(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.city(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.nature(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.cats(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.fashion(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.food(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.food(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.technics(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.city(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.nature(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.cats(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.fashion(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-          <li>
-            <img className={styles.categoyIcon} src={faker.image.food(60, 60)}></img>
-            <div>{faker.lorem.word()}</div>
-          </li>
-        </ul>
+        <div className={styles.categoryListInner}>
+          <ul>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.food(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.technics(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.city(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.nature(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.cats(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.fashion(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.food(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.food(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.technics(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.city(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.nature(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.cats(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.fashion(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+            <li>
+              <img className={styles.categoyIcon} src={faker.image.food(80, 80)}></img>
+              <div>{faker.lorem.words()}</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

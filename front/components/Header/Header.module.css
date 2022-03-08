@@ -1,6 +1,7 @@
 .headerContainer {
   display: flex;
   justify-content: space-between;
+  padding: var(--main-page-padding);
 }
 
 .titleInner {

@@ -1,0 +1,43 @@
+.popularBrandsContainer {
+  display: flex;
+  width: 1400px;
+  margin-left: 20px;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.titleBox {
+  width: 22%;
+  margin-top: 20px;
+}
+
+/* .viewMore div {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+} */
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.brandListBox {
+  width: 78.5%;
+  background-color: white;
+  padding: 42px 47px;
+}
+
+.brandListInner {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brandListBox ul li {
+  width: 205px;
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  padding-bottom: 20px;
+}

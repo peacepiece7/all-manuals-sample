@@ -1,0 +1,41 @@
+.popularCategoiesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin-left: 20px;
+}
+
+.titleBox {
+  display: flex;
+}
+
+.title {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+}
+
+.categoryListInner ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 65px 20px;
+}
+
+.categoryListInner ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.categoyIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}

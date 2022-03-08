@@ -1,5 +1,5 @@
-import styles from './PopularBrands.module.css';
-import { faker } from '@faker-js/faker';
+import styles from "./PopularBrands.module.css";
+import { faker } from "@faker-js/faker";
 
 export default function PopularBrands() {
   return (
@@ -9,53 +9,83 @@ export default function PopularBrands() {
           <span>Popular</span>
           <span>Brands</span>
         </div>
-        <div classNmae={styles.viewMoreBox}>
-          <span>{'View all >'}</span>
+        <div classNmae={styles.viewMore}>
+          <div>{"View all >"}</div>
         </div>
       </div>
       <div className={styles.brandListBox}>
-        <ul clssName={styles.brandList}>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-        </ul>
-        <ul clssName={styles.brandList}>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-        </ul>
-        <ul clssName={styles.brandList}>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-          <li>{faker.company.bsBuzz()}</li>
-        </ul>
+        <div className={styles.brandListInner}>
+          <ul clssName={styles.brandList}>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+          </ul>
+          <ul clssName={styles.brandList}>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+          </ul>
+          <ul clssName={styles.brandList}>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+          </ul>
+          <ul clssName={styles.brandList}>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+          </ul>
+          <ul clssName={styles.brandList}>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+            <li>· {faker.company.bsBuzz()}</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

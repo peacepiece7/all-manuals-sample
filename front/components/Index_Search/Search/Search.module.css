@@ -1,4 +1,6 @@
 .searchContainer {
+  /* width: calc((1400 * 100%) / 1924); 72.76..% */
+  /* padding: var(--main-page-padding); */
   width: 100%;
   display: flex;
   flex-direction: column;

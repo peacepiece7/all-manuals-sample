@@ -21,12 +21,25 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul,
+li {
   margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 :root {
   --font-size-small: 1rem;
   --font-size-middle: 1.333rem;
   --font-size-title: 2.4rem;
+  --main-button-font-size: 1.5rem;
+  --main-page-padding: 0.2rem 4rem 0 4rem;
+  --main-section-width: 940px;
+  --main-button-color: #5a25d8;
+  --footer-background-color: #3b3b3b;
 }
