@@ -1,7 +1,7 @@
 .popularCategoiesContainer {
   display: flex;
   flex-direction: column;
-  width: 1400px;
+  max-width: 1400px;
   margin-left: 20px;
 }
 
@@ -14,10 +14,15 @@
   font-weight: 700;
 }
 
+.categoryListInner {
+  display: flex;
+  justify-content: center;
+}
+
 .categoryListInner ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 65px 20px;
 }

@@ -9,7 +9,7 @@ export default function PopularBrands() {
           <span>Popular</span>
           <span>Brands</span>
         </div>
-        <div classNmae={styles.viewMore}>
+        <div className={styles.viewAll}>
           <div>{"View all >"}</div>
         </div>
       </div>

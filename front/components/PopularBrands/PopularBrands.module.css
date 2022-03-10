@@ -23,10 +23,14 @@
   margin-bottom: 15px;
 }
 
+.viewAll {
+  width: 250px;
+}
+
 .brandListBox {
   width: 78.5%;
   background-color: white;
-  padding: 42px 40px;
+  padding: 45px 40px;
 }
 
 .brandList {
@@ -46,5 +50,23 @@
 @media screen and (max-width: 1450px) {
   .popularBrandsContainer {
     flex-direction: column;
+  }
+  .titleBox {
+    padding-bottom: 30px;
+  }
+  .title {
+    flex-direction: row;
+  }
+  .title span:last-child {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    flex-direction: column;
+  }
+  .title span:last-child {
+    padding-left: 0;
   }
 }
