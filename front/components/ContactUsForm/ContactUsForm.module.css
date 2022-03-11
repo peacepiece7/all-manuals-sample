@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 150px 0 30px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: var(--font-size-title);
+  width: 640px;
+  height: 490px;
+  padding: 10px 15px;
+}
+.title h2 {
+  display: inline;
+  border-bottom: 3px solid black;
+}
+
+.form {
+  width: 775px;
+  height: 490px;
+  font-size: var(--font-size-middle);
+  font-weight: 700;
+}
+
+.form div:nth-child(2) {
+  margin-top: 35px;
+}
+.form div:nth-child(3) {
+  margin-top: 30px;
+}
+.emailForm {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 50px;
+  width: 45%;
+  margin-top: 7px;
+  padding-left: 20px;
+}
+
+.textareaForm {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 260px;
+  margin-top: 7px;
+  padding: 20px;
+}
+
+.submitBtn {
+  float: right;
+}
+.submitBtn button {
+  background-color: var(--main-button-color);
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: var(--font-size-small);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .title {
+    width: 100%;
+    height: 150px;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .emailForm {
+    width: 90%;
+  }
+}

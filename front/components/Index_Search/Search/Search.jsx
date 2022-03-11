@@ -21,7 +21,7 @@ export default function Search() {
             <option value="brand">Brand</option>
             <option value="category">Category</option>
           </select>
-          <input type="text" placeholder="Search for manuals"></input>
+          <input className={styles.searchBar} type="text" placeholder="Search for manuals"></input>
           <div className={styles.submit}>
             <Image src={searchGlass} onClick={onClickSubmitImage}></Image>
             <input type="submit" hidden ref={imageInput} name="submit" />

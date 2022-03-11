@@ -1,4 +1,5 @@
 import styles from "./PopularBrands.module.css";
+import Link from "next/link";
 import { faker } from "@faker-js/faker";
 
 export default function PopularBrands() {
@@ -10,7 +11,9 @@ export default function PopularBrands() {
           <span>Brands</span>
         </div>
         <div className={styles.viewAll}>
-          <div>{"View all >"}</div>
+          <Link href="Brands">
+            <div>{"View all >"}</div>
+          </Link>
         </div>
       </div>
       <div className={styles.brandListBox}>

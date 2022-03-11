@@ -1,29 +1,25 @@
 import Head from "next/head";
 import styles from "../styles/contactUs.module.css";
 
-import Header from "../components/Header/Header";
 import Layout from "../components/Layout/Layout";
-import Footer from "../components/Footer/Footer";
+import ContactUsForm from "../components/ContactUsForm/ContactUsForm";
 
 export default function ContactUs() {
   return (
     <div className={styles.container}>
-      <header>
+      <head>
         <Head>
-          <title>All Manuals</title>
-          <meta name="description" content="Support all manual sheets" />
-          <link rel="icon" href="/favicon.ico" />
+          <title>All Manuals - contact us</title>
+          <meta name="description" content="Support manuals" />
         </Head>
-        <Header></Header>
-      </header>
-      <main>
+      </head>
+      <div>
         <Layout>
-          <section className={styles.contactUsForm}></section>
+          <section>
+            <ContactUsForm />
+          </section>
         </Layout>
-      </main>
-      <footer className={styles.footer}>
-        <Footer></Footer>
-      </footer>
+      </div>
     </div>
   );
 }

@@ -15,8 +15,16 @@ export default function Header() {
           </Link>
         </div>
         <div className={styles.topMenus}>
-          <span className={styles.categoies}>Categories</span>
-          <span className={styles.brands}>Brands</span>
+          <span className={styles.categoies}>
+            <Link href="Categories">
+              <a>Categories</a>
+            </Link>
+          </span>
+          <span className={styles.brands}>
+            <Link href="Brands">
+              <a>Brands</a>
+            </Link>
+          </span>
         </div>
       </div>
       <div className={styles.language}>

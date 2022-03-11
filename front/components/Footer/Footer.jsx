@@ -13,7 +13,7 @@ export default function Footer() {
               </Link>
             </span>
             <span className={styles.privacyPolicy}>
-              <Link href="/privacyPolicy">
+              <Link href="/PrivacyPolicy">
                 <a>Privacy Policy</a>
               </Link>
             </span>

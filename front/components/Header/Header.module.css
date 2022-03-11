@@ -23,3 +23,19 @@
 .brands {
   padding-left: 2.5rem;
 }
+
+/* category brand icon으로 변경하기 */
+@media screen and (max-width: 950px) {
+  .language span:first-child {
+    display: none;
+  }
+  .headerContainer {
+    padding: 0;
+  }
+  .categoies {
+    padding-left: 0.5rem;
+  }
+  .brands {
+    padding-left: 0.5rem;
+  }
+}

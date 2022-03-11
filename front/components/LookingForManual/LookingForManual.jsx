@@ -6,7 +6,7 @@ export default function LookingForManual() {
     <div className={styles.lookingForManualContainer}>
       <div className={styles.textBox}>
         <div className={styles.title}>
-          <h2>Isn't threr a manual you're looking for?</h2>
+          <h2>Isn't there a manual you're looking for?</h2>
         </div>
         <div className={styles.descripion}>
           <div>Please tell us the brand and product name you want.</div>
