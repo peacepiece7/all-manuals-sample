@@ -1,27 +1,27 @@
-import styles from './Header.module.css';
-import Image from 'next/image';
-import allManual from '../../../public/all_manual.png';
-import Link from 'next/link';
+import styles from "./Header.module.css";
+import Image from "next/image";
+import allManual from "../../../public/all_manual.png";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.titleInner}>
         <div className={styles.title}>
-          <Link href='/'>
+          <Link href="/">
             <a>
-              <Image className={styles.titleImage} src={allManual} alt='AllManual' />
+              <Image className={styles.titleImage} src={allManual} alt="AllManual" />
             </a>
           </Link>
         </div>
         <div className={styles.topMenus}>
           <span className={styles.categoies}>
-            <Link href='Categories'>
+            <Link href="Categories">
               <a>Categories</a>
             </Link>
           </span>
           <span className={styles.brands}>
-            <Link href='Brands/A#'>
+            <Link href="Brands/A#">
               <a>Brands</a>
             </Link>
           </span>
@@ -29,7 +29,7 @@ export default function Header() {
       </div>
       <div className={styles.language}>
         <span>Languages</span>
-        <span>{'(지구본)'}</span>
+        <span>{"(지구본)"}</span>
       </div>
     </div>
   );
