@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
-import Image from "next/image";
-import allManual from "../../../public/all_manual.png";
 import Link from "next/link";
+import Image from "next/image";
+import allManual from "../../public/all_manual.png";
 
 export default function Header() {
   return (
