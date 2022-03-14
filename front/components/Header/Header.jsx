@@ -21,7 +21,7 @@ export default function Header() {
             </Link>
           </span>
           <span className={styles.brands}>
-            <Link href="Brands">
+            <Link href="Brands/A#">
               <a>Brands</a>
             </Link>
           </span>

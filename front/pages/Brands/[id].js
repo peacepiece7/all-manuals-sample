@@ -1,8 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Brands.module.css";
+import styles from "../../styles/Brands.module.css";
 
-import Layout from "../components/Layout/Layout";
-import BrandCategoryForm from "../components/BrandCategoryForm/BrandCategoryForm";
+import Layout from "../../components/Layout/Layout";
+import BrandCategoryForm from "../../components/BrandCategoryForm/BrandCategoryForm";
 
 export default function Brands() {
   return (
