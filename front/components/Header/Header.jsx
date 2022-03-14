@@ -1,6 +1,5 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
-import allManual from "../../public/allManual.png";
 import Link from "next/link";
 
 export default function Header() {
@@ -10,7 +9,7 @@ export default function Header() {
         <div className={styles.title}>
           <Link href="/">
             <a>
-              <Image className={styles.titleImage} src={allManual} alt="AllManual" />
+              <Image className={styles.titleImage} src={"../../public/all_manual.png"} alt="AllManual" />
             </a>
           </Link>
         </div>
