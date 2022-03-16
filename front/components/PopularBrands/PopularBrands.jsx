@@ -11,7 +11,7 @@ export default function PopularBrands() {
           <span>Brands</span>
         </div>
         <div className={styles.viewAll}>
-          <Link href="Brands">
+          <Link href="brands/A#">
             <div>{"View all >"}</div>
           </Link>
         </div>

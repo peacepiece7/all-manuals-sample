@@ -9,14 +9,14 @@ import PopularCategoiesSection from "../components/PopularCategories/PopularCate
 import LookingForManual from "../components/LookingForManual/LookingForManual";
 
 export default function Home() {
+  //   <head>
+  //   <Head>
+  //     <title>All Manuals - Home</title>
+  //     <meta name="description" content="Support all manual sheets" />
+  //   </Head>
+  // </head>
   return (
     <>
-      <head>
-        <Head>
-          <title>All Manuals - Home</title>
-          <meta name="description" content="Support all manual sheets" />
-        </Head>
-      </head>
       <div className={styles.container}>
         <div className={styles.main}>
           <Layout>

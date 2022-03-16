@@ -15,7 +15,7 @@ export default function Brands() {
       </head>
       <div>
         <Layout>
-          <section>
+          <section className={styles.brandSection}>
             <BrandCategoryForm></BrandCategoryForm>
           </section>
         </Layout>
