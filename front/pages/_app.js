@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Hydrate state={pageProps.dehydratedState}>
         <Component {...pageProps}></Component>
       </Hydrate>
-      <ReactQueryDevtools initialIsOpen />
+      {process.env.NODE_ENV === "development" && <ReactQueryDevtools initialIsOpen />}
     </QueryClientProvider>
   );
 }
