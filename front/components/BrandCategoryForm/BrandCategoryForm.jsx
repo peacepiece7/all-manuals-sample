@@ -1,9 +1,16 @@
 import React, { useCallback, useState } from "react";
+import Link from "next/link";
 import styles from "./BrandCategoryForm.module.css";
-import faker from "@faker-js/faker";
+
+import { useQuery } from "react-query";
+
+import { loadBrandCategories } from "../../apis/apis";
+
 function BrandCategoryForm() {
   const [selected, isSelected] = useState("A");
   const [subSelected, isSubSelected] = useState("#");
+  const { data, isLoading, isSuccess } = useQuery(["brand category", subSelected], loadBrandCategories(subSelected));
+
   // prettier-ignore
   const categories = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0-#"];
   // prettier-ignore
@@ -27,9 +34,11 @@ function BrandCategoryForm() {
               );
             } else {
               return (
-                <li className={styles.inactive} id={v}>
-                  {v}
-                </li>
+                <Link href={`/brands/${v}#`}>
+                  <li className={styles.inactive} id={v}>
+                    {v}
+                  </li>
+                </Link>
               );
             }
           })}
@@ -46,9 +55,11 @@ function BrandCategoryForm() {
                     );
                   } else {
                     return (
-                      <li className={styles.inactive} id={selected + v}>
-                        <a>{selected + v}</a>
-                      </li>
+                      <Link herf={`/brands/${selected + v}`}>
+                        <li className={styles.inactive} id={selected + v}>
+                          <a>{selected + v}</a>
+                        </li>
+                      </Link>
                     );
                   }
                 })
@@ -61,127 +72,16 @@ function BrandCategoryForm() {
                     );
                   } else {
                     return (
-                      <li className={styles.inactive} id={selected + v}>
-                        <a>{selected + v}</a>
-                      </li>
+                      <Link href={`${selected + v}`}>
+                        <li className={styles.inactive} id={selected + v}>
+                          <a>{selected + v}</a>
+                        </li>
+                      </Link>
                     );
                   }
                 })}
           </ul>
-          <ul className={styles.brands}>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-            <li>{faker.company.companyName()}</li>
-          </ul>
+          <ul className={styles.brands}></ul>
         </div>
       </div>
     </div>

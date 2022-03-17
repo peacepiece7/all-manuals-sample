@@ -16,12 +16,12 @@ export default function Header() {
         </div>
         <div className={styles.topMenus}>
           <span className={styles.categoies}>
-            <Link href="categories">
+            <Link href="/categories">
               <a>Categories</a>
             </Link>
           </span>
           <span className={styles.brands}>
-            <Link href="brands/A#">
+            <Link href="/brands/A#">
               <a>Brands</a>
             </Link>
           </span>

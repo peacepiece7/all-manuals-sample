@@ -1,8 +1,7 @@
 import styles from "./PopularBrands.module.css";
 import Link from "next/link";
-import { faker } from "@faker-js/faker";
 
-export default function PopularBrands() {
+export default function PopularBrands({ brandData }) {
   return (
     <div className={styles.popularBrandsContainer}>
       <div className={styles.titleBox}>
@@ -10,6 +9,7 @@ export default function PopularBrands() {
           <span>Popular</span>
           <span>Brands</span>
         </div>
+
         <div className={styles.viewAll}>
           <Link href="brands/A#">
             <div>{"View all >"}</div>
@@ -17,68 +17,15 @@ export default function PopularBrands() {
         </div>
       </div>
       <div className={styles.brandListBox}>
-        <ul className={styles.brandList}>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-          <li>· {faker.company.bsBuzz()}</li>
-        </ul>
+        {brandData ? (
+          <ul className={styles.brandList}>
+            {brandData.map((v, i) => {
+              return <li key={i + v}>{`· ${v}`}</li>;
+            })}
+          </ul>
+        ) : (
+          <div className={styles.isLoading}>loading...</div>
+        )}
       </div>
     </div>
   );
