@@ -46,6 +46,7 @@
   font-size: var(--font-size-small);
   font-weight: 700;
   padding-bottom: 20px;
+  cursor : pointer
 }
 
 /* splite title and box */

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/contactUs.module.css";
 
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Common/Layout/Layout";
 import ContactUsForm from "../components/ContactUsForm/ContactUsForm";
 
 export default function ContactUs() {

@@ -5,12 +5,12 @@ import { useQuery } from "react-query";
 
 import { loadPopularCategories, loadPopularBrands } from "../apis/apis";
 
-import Layout from "../components/Layout/Layout";
-import Search from "../components/Index_Search/Search/Search";
-import Detail from "../components/Index_Search/Detail/Detail";
-import PopularBrandsSection from "../components/PopularBrands/PopularBrands";
-import PopularCategoiesSection from "../components/PopularCategories/PopularCategories";
-import LookingForManual from "../components/LookingForManual/LookingForManual";
+import Layout from "../components/Common/Layout/Layout";
+import Search from "../components/Home/Search/Search";
+import Detail from "../components/Home/Detail/Detail";
+import PopularBrandsSection from "../components/Home/PopularBrands/PopularBrands";
+import PopularCategoiesSection from "../components/Home/PopularCategories/PopularCategories";
+import LookingForManual from "../components/Home/LookingForManual/LookingForManual";
 
 export default function Home() {
   // prettier-ignore

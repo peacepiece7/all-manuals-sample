@@ -23,7 +23,7 @@ export async function loadPopularBrands() {
 }
 export async function loadBrandCategories(query) {
   try {
-    const response = await axios.get(`brand-category?query=${query}`);
+    const response = await axios.get(`brand-category?category=${encodeURIComponent(query.queryKey[1])}`);
     return response.data;
   } catch (error) {
     console.error(error);

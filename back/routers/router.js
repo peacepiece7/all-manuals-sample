@@ -18,8 +18,10 @@ router.get("/popular-categories", (req, res, next) => {
 });
 
 router.get("/brand-category", (req, res, next) => {
-  console.log("/brand-category");
-  console.log(dummyBrandCategories);
+  const subcategory = req.query.category;
+  const copyBrandCategories = dummyBrandCategories;
+  copyBrandCategories.brands.unshift(`${subcategory} idx page!`);
+  return res.json(copyBrandCategories);
 });
 
 module.exports = router;

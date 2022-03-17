@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import allManual from "../../public/all_manual.png";
+import allManual from "../../../public/all_manual.png";
 
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
             </Link>
           </span>
           <span className={styles.brands}>
-            <Link href="/brands/A#">
+            <Link href={{ pathname: "/brands", query: { category: "A", subcategory: "#" } }}>
               <a>Brands</a>
             </Link>
           </span>

@@ -11,7 +11,7 @@ export default function PopularBrands({ brandData }) {
         </div>
 
         <div className={styles.viewAll}>
-          <Link href="brands/A#">
+          <Link href={{ pathname: "/brands", query: { category: "A", subcategory: "#" } }}>
             <div>{"View all >"}</div>
           </Link>
         </div>
@@ -20,7 +20,11 @@ export default function PopularBrands({ brandData }) {
         {brandData ? (
           <ul className={styles.brandList}>
             {brandData.map((v, i) => {
-              return <li key={i + v}>{`· ${v}`}</li>;
+              return (
+                <Link href={`/brand/${v}`}>
+                  <li key={i + v}>{`· ${v}`}</li>
+                </Link>
+              );
             })}
           </ul>
         ) : (

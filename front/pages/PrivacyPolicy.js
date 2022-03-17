@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/PrivacyPolicy.module.css";
 
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Common/Layout/Layout";
 import PolicyForm from "../components/PolicyForm/PolicyForm";
 
 export default function PorivarcyPolicy() {
