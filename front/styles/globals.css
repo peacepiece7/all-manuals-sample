@@ -36,6 +36,7 @@ li {
 :root {
   --font-size-small: 1rem;
   --font-size-middle: 1.333rem;
+  --font-size-large : 1.6rem;
   --font-size-title: 2.4rem;
   --main-button-font-size: 1.5rem;
   --main-page-padding: 0.2rem 4rem 0 4rem;

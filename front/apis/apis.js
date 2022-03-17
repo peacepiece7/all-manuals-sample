@@ -29,3 +29,10 @@ export async function loadBrandCategories(query) {
     console.error(error);
   }
 }
+
+export async function loadCategoryModels(query) {
+  try {
+  } catch (error) {
+    console.error(error);
+  }
+}

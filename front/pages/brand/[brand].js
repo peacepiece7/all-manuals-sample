@@ -2,7 +2,7 @@ import styles from "../../styles/Brand.module.css";
 import { useRouter } from "next/router";
 
 import Layout from "../../components/Common/Layout/Layout";
-import BrandDetailForm from "../../components/brandDetailForm/BrandDetailForm";
+import BrandDetailForm from "../../components/Brand/BrandDetailForm/BrandDetailForm";
 
 export default function Brand() {
   const router = useRouter();
