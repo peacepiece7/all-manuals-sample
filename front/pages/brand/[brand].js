@@ -1,4 +1,4 @@
-import styles from "../../styles/Brand.module.css";
+import styles from "../../styles/brand.module.css";
 import { useRouter } from "next/router";
 
 import Layout from "../../components/Common/Layout/Layout";
