@@ -1,9 +1,8 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import { useQuery } from "react-query";
 
-import { loadPopularCategories, loadPopularBrands } from "../apis/apis";
+import { useLoadPopularbrands, useLoadPopularCategories } from "../hooks/hooks";
 
 import Layout from "../components/Common/Layout/Layout";
 import Search from "../components/Home/Search/Search";
@@ -13,13 +12,12 @@ import PopularCategoiesSection from "../components/Home/PopularCategories/Popula
 import LookingForManual from "../components/Home/LookingForManual/LookingForManual";
 
 export default function Home() {
+  // ? await이 왜 필요없지 ? await useLoadPopularbrands() <- 제너레이터인가?
   // prettier-ignore
-  const { data: brandData, isLoading: isBrandLoading, isError: isBrandError,isSuccess:isBrandSuccess } = useQuery("brands", loadPopularBrands);
+  const { data: brandData, isLoading: isBrandLoading, isError: isBrandError,isSuccess:isBrandSuccess } = useLoadPopularbrands()
   // prettier-ignore
-  const {data : categoryData, isLoading : isCategoryLoading, isError : isCategoryError, isSuccess:isCategorySuccess} = useQuery("category",loadPopularCategories )
+  const {data : categoryData, isLoading : isCategoryLoading, isError : isCategoryError, isSuccess:isCategorySuccess} = useLoadPopularCategories()
 
-  console.log("popular Brand success", isBrandSuccess);
-  console.log("popular category success", isCategorySuccess);
   return (
     <>
       <div className={styles.container}>

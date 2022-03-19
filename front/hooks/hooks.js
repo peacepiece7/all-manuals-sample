@@ -1,6 +1,12 @@
 import { useQuery } from "react-query";
-// import {} from "../apis/apis"
+import { loadPopularCategoriesAPI, loadPopularBrandsAPI, loadCategoriesInBrandAPI } from "../apis/apis";
 
-export const useLoadPopularbrands = () => {};
-export const useLoadPopularCategories = () => {};
-export const useLoadBrandCategories = () => {};
+export const useLoadPopularbrands = () => {
+  return useQuery(["popularBrands"], loadPopularBrandsAPI);
+};
+export const useLoadPopularCategories = () => {
+  return useQuery(["popularCategories"], loadPopularCategoriesAPI);
+};
+export const useLoadCategoriesInBrand = (query) => {
+  return useQuery(["categoriesInBrand", query], () => loadCategoriesInBrandAPI(encodeURIComponent(query)));
+};

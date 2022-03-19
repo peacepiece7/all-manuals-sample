@@ -5,15 +5,7 @@ axios.defaults.baseURL = "http://192.168.10.34:8337";
 // axios.defaults.baseURL = backURL;
 // axios.defaults.withCredentials = true;
 
-export async function loadPopularCategories() {
-  try {
-    const response = await axios.get(`/popular-categories`);
-    return response.data;
-  } catch (error) {
-    console.error(error);
-  }
-}
-export async function loadPopularBrands() {
+export async function loadPopularBrandsAPI() {
   try {
     const response = await axios.get("/popular-brands");
     return response.data;
@@ -21,16 +13,25 @@ export async function loadPopularBrands() {
     console.error(error);
   }
 }
-export async function loadBrandCategories(query) {
+export async function loadPopularCategoriesAPI() {
   try {
-    const response = await axios.get(`brand-category?category=${encodeURIComponent(query.queryKey[1])}`);
+    const response = await axios.get(`/popular-categories`);
     return response.data;
   } catch (error) {
     console.error(error);
   }
 }
 
-export async function loadCategoryModels(query) {
+export async function loadCategoriesInBrandAPI(query) {
+  try {
+    const response = await axios.get(`/category-in-brand?category=${query}`);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+export async function loadCategoryModelsAPI(query) {
   try {
   } catch (error) {
     console.error(error);

@@ -17,7 +17,7 @@ router.get("/popular-categories", (req, res, next) => {
   }, 2000);
 });
 
-router.get("/brand-category", (req, res, next) => {
+router.get("/category-in-brand", (req, res, next) => {
   const subcategory = req.query.category;
   const copyBrandCategories = dummyBrandCategories;
   copyBrandCategories.brands.unshift(`${subcategory} idx page!`);
