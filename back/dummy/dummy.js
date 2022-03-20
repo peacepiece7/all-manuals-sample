@@ -276,348 +276,389 @@ const dummyBrandCategories = {
   ],
 };
 
+const dummyModelsInSubcategory1 = [
+  {
+    manualName: "LM-324",
+    id: 1,
+    items: [
+      {
+        doc: 1,
+        url: 2,
+      },
+    ],
+  },
+  {
+    manualName: "LM-324",
+    id: 1,
+    items: [
+      {
+        doc: 1,
+        url: 2,
+      },
+    ],
+  },
+  {
+    manualName: "LM-324",
+    id: 1,
+    items: [
+      {
+        doc: 1,
+        url: 2,
+      },
+    ],
+  },
+];
+
 const dummyModelsInSubcategory = {
   subcategory: "3D printers",
   models: [
     {
-      "LM-324": {
-        id: 1,
-        items: [
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1542005-123242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1542005-123245",
-          },
-        ],
-      },
-      "A-324": {
-        id: 2,
-        items: [
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName19954005-123242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1999954005-123242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9992005-993245",
-          },
-        ],
-      },
-      UUID4675: {
-        id: 3,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "LMX4728/522": {
-        id: 4,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "BabyBohj One Cotton Mix Baby Carrier - Baby Carrier One, One Aire New version": {
-        id: 5,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "loeram lipsum the fox jumps over the lazy brown dog": {
-        id: 6,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "loeram lipsum the fox jumps over the lazy brown dog - FR": {
-        id: 7,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "loeram lipsum the fox jumps over the lazy brown dog - IT": {
-        id: 7,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "loeram lipsum the fox jumps over the lazy brown dog - SP": {
-        id: 7,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
-      "loeram lipsum the fox jumps over the lazy brown dog - GE": {
-        id: 7,
-        items: [
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "instruction",
-            url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "owners manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-          {
-            doctype: "users manual",
-            url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
-          },
-        ],
-      },
+      modelName: "LM-324",
+      id: 1,
+      items: [
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1542005-123242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1542005-123245",
+        },
+      ],
+    },
+    {
+      modelName: "A-324",
+      id: 2,
+      items: [
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName19954005-123242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1999954005-123242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9992005-993245",
+        },
+      ],
+    },
+    {
+      modelName: "UUID4675",
+      id: 3,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "LMX4728/522",
+      id: 4,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "BabyBohj One Cotton Mix Baby Carrier - Baby Carrier One, One Aire New version",
+      id: 5,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "loeram lipsum the fox jumps over the lazy brown dog",
+      id: 7016,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "loeram lipsum the fox jumps over the lazy brown dog - FR",
+      id: 12467,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "loeram lipsum the fox jumps over the lazy brown dog - IT",
+      id: 4567,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "loeram lipsum the fox jumps over the lazy brown dog - SP",
+      id: 736547,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
+    },
+    {
+      modelName: "loeram lipsum the fox jumps over the lazy brown dog - GE",
+      id: 777,
+      items: [
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "instruction",
+          url: "http://192.168.10.34:7282/model/product1/pdfName78954005-53242",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "owners manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName1232005593245",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName9540055242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+        {
+          doctype: "users manual",
+          url: "http://192.168.10.34:7282/model/product1/pdfName4564005-53242",
+        },
+      ],
     },
   ],
 };

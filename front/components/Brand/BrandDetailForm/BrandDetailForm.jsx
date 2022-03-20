@@ -4,6 +4,8 @@ import faker from "@faker-js/faker";
 import { useLoadAllSubcategoriesInBrand, useLoadModelsInSubcategory } from "../../../hooks/hooks";
 import { useState } from "react";
 
+import ModelList from "../ModelList/ModelList";
+
 export default function BrandDetailForm({ brandName }) {
   const [query, setQuery] = useState(null);
 
@@ -53,10 +55,18 @@ export default function BrandDetailForm({ brandName }) {
           {barndList.map((v) => {
             return (
               <li key={v.brand}>
-                <h3>{v.brand}</h3>
-                <div onClick={handleMoreBtnClick} className={styles.moreBtn}>
-                  <button id={v.brand}>more</button>
-                  {modelsDataIsSuccess && modelsData.subcategory === v.brand ? <div>{v.brand}</div> : <div></div>}
+                <div className={styles.flyoutBoxHeader}>
+                  <h3>{v.brand}</h3>
+                  <div onClick={handleMoreBtnClick} className={styles.moreBtn}>
+                    <button id={v.brand}>more</button>
+                  </div>
+                </div>
+                <div className={styles.flyoutBoxContent}>
+                  {modelsDataIsSuccess && modelsData.subcategory === v.brand ? (
+                    <ModelList models={modelsData.models} />
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </li>
             );

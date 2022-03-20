@@ -1,0 +1,27 @@
+.container li {
+    width : 100%;
+    display: flex;
+    min-height: 50px;
+    padding : 14px 0;
+}
+
+
+.model {
+    min-width: 35%;
+    max-width : 35%;
+    padding : 0 30px;
+
+}
+
+.doctypeBox {
+    display : flex;
+    flex-wrap: wrap;
+    
+}
+
+.doctypeBox a {
+}
+
+.pair{
+    background-color: rgba(0,0,0,0.05);
+}
