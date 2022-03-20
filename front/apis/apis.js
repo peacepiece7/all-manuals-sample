@@ -5,6 +5,7 @@ axios.defaults.baseURL = "http://192.168.10.34:8337";
 // axios.defaults.baseURL = backURL;
 // axios.defaults.withCredentials = true;
 
+// /home
 export async function loadPopularBrandsAPI() {
   try {
     const response = await axios.get("/popular-brands");
@@ -15,24 +16,38 @@ export async function loadPopularBrandsAPI() {
 }
 export async function loadPopularCategoriesAPI() {
   try {
-    const response = await axios.get(`/popular-categories`);
+    const response = await axios.get(`/popularCategories`);
     return response.data;
   } catch (error) {
     console.error(error);
   }
 }
 
-export async function loadCategoriesInBrandAPI(query) {
+// * brands?category=[idx]&subcategory=[idx]
+export async function loadSubcategoriesInBrandAPI(query) {
   try {
-    const response = await axios.get(`/category-in-brand?category=${query}`);
+    const response = await axios.get(`/subcategoriesInBrand?idx=${query}`);
     return response.data;
   } catch (error) {
     console.error(error);
   }
 }
 
-export async function loadCategoryModelsAPI(query) {
+// * brand/[brand name]?brand=[query]
+export async function loadAllSubcategoriesInBrandAPI(query) {
   try {
+    const response = await axios.get(`/allSubcategproesInBrand?brand=${query}`);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// * brand/[brand name]?subcategory=[query] *event
+export async function loadModelsInSubcategoryAPI(query) {
+  try {
+    const response = await axios.get(`/modelsInSubcategory?subcategory=${query}`);
+    return response.data;
   } catch (error) {
     console.error(error);
   }

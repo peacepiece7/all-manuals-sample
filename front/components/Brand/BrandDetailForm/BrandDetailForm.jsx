@@ -1,10 +1,28 @@
 import styles from "./BrandDetailForm.module.css";
 import faker from "@faker-js/faker";
-import { useQuery } from "react-query";
+
+import { useLoadAllSubcategoriesInBrand, useLoadModelsInSubcategory } from "../../../hooks/hooks";
+import { useState } from "react";
 
 export default function BrandDetailForm({ brandName }) {
+  const [query, setQuery] = useState(null);
+
   const barndList = [{ brand: "3D printers" }, { brand: "carmera" }, { brand: "laptop" }];
-  const { data, isLoading } = useQuery(["categoryModels", null], { enabled: true }); // queries폴더 만들자...
+  const { data: subcategoriesData, isLoading: subcategoriesIsLoading } = useLoadAllSubcategoriesInBrand(brandName);
+  const {
+    data: modelsData,
+    isLoading: modelsDataIsLoading,
+    isSuccess: modelsDataIsSuccess,
+  } = useLoadModelsInSubcategory(query);
+
+  console.log("modelsData", modelsData);
+  console.log("ls loading", modelsDataIsLoading);
+  console.log("ls success", modelsDataIsSuccess);
+  console.log("");
+
+  const handleMoreBtnClick = (e) => {
+    setQuery(() => e.target.id);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -21,85 +39,25 @@ export default function BrandDetailForm({ brandName }) {
       <section className={styles.categoriesBox}>
         <div className={styles.categoriesTitle}>Categories</div>
         <ul className={styles.categoriesList}>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
-          <li>{faker.lorem.words()}</li>
+          {subcategoriesIsLoading ? (
+            <div>Loading ... </div>
+          ) : (
+            subcategoriesData.subcategories.map((v) => {
+              return <li key={v.id}>{v.subcategory}</li>;
+            })
+          )}
         </ul>
       </section>
       <section className={styles.cateoryFlyout}>
         <ul className={styles.flyoutBox}>
           {barndList.map((v) => {
             return (
-              <li>
+              <li key={v.brand}>
                 <h3>{v.brand}</h3>
-                <div className={styles.moreBtn}>more</div>
+                <div onClick={handleMoreBtnClick} className={styles.moreBtn}>
+                  <button id={v.brand}>more</button>
+                  {modelsDataIsSuccess && modelsData.subcategory === v.brand ? <div>{v.brand}</div> : <div></div>}
+                </div>
               </li>
             );
           })}
