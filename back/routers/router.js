@@ -9,18 +9,21 @@ const {
 
 const router = express.Router();
 
+router.get("/", (req, res, next) => {
+  console.log("back server is working..");
+  return res.send("back server is work!");
+});
+
 // * HOME
 router.get("/popular-brands", (req, res, next) => {
   console.log("/popular-brands");
-  setTimeout(() => {
-    return res.json(dummyPopularBrands);
-  }, 1000);
+
+  return res.json(dummyPopularBrands);
 });
 router.get("/popularCategories", (req, res, next) => {
   console.log("/popular-categories\n\r");
-  setTimeout(() => {
-    return res.json(dummyPopularCategories);
-  }, 2000);
+
+  return res.json(dummyPopularCategories);
 });
 
 // * brands?category=[idx]&subcategory=[idx]
