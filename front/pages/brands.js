@@ -1,4 +1,4 @@
-import styles from "../styles/brands.module.css";
+import styles from "../styles/Brands.module.css";
 
 import Layout from "../components/Common/Layout/Layout";
 import BrandCategoryForm from "../components/Brands/BrandCategoryForm/BrandCategoryForm";
