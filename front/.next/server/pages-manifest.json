@@ -1,6 +1,13 @@
 {
+  "/PrivacyPolicy": "pages/PrivacyPolicy.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/brand/[brand]": "pages/brand/[brand].html",
+  "/brands": "pages/brands.html",
+  "/categories": "pages/categories.html",
+  "/contactUs": "pages/contactUs.html",
+  "/": "pages/index.html",
+  "/search": "pages/search.html",
   "/_error": "pages/_error.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }

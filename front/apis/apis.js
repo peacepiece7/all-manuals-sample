@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://192.168.10.34:8337";
+axios.defaults.baseURL = "http://localhost:8337";
 // import { backURL } from "../config/config";
 // axios.defaults.baseURL = backURL;
 // axios.defaults.withCredentials = true;

@@ -17,11 +17,6 @@ export default function BrandDetailForm({ brandName }) {
     isSuccess: modelsDataIsSuccess,
   } = useLoadModelsInSubcategory(query);
 
-  console.log("modelsData", modelsData);
-  console.log("ls loading", modelsDataIsLoading);
-  console.log("ls success", modelsDataIsSuccess);
-  console.log("");
-
   const handleMoreBtnClick = (e) => {
     setQuery(() => e.target.id);
   };

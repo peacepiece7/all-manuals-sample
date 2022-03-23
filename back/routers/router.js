@@ -6,12 +6,23 @@ const {
   dummySubcategoriesInBrand,
   dummyModelsInSubcategory,
 } = require("../dummy/dummy");
+const axios = require("axios");
 
 const router = express.Router();
 
 router.get("/", (req, res, next) => {
   console.log("back server is working..");
   return res.send("back server is work!");
+});
+
+router.get("/test", async (req, res, next) => {
+  try {
+    const response = await axios.get("http://localhost:8080/allmanual/api");
+    const result = response.data;
+    return res.send(result);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 // * HOME
